@@ -1,0 +1,14 @@
+{
+  "verbose": true,
+  "execMap": {
+    "js": "cross-env NODE_ENV=development node --inspect=9100"
+  },
+  "watch": [
+    "src/",
+    ".env"
+  ],
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "ext": "js,json"
+}

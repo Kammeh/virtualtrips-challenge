@@ -16,6 +16,7 @@ Output:
 ```
 
 Explanation:
+
 Javascript is a syncronous language, and utilises an event loop to handle ensure processing is not held up unnecessarily.  The Timeout function is moved into the event loop to be run when the timer has finished, and the code carries on executing in the meantime
 
 Q2: Explain the output of the following code and why
@@ -43,9 +44,10 @@ Output:
 2
 1
 0
-`
+```
 
 Explanation:
+
 The function calls itself if the number is less than 10, which means the count will get stuck in a loop until the count has gone over 10.  At that point, the loop will then execute the rest of the function for each of the numbers that were counted.
 
 Q3: If nothing is provided to `foo` we want the default response to be `5`. Explain the potential issue with the following code:
@@ -58,6 +60,7 @@ Q3: If nothing is provided to `foo` we want the default response to be `5`. Expl
 ```
 
 Explanation:
+
 Use of the || operator will create a boolean check on the value passed to it (d).  In this example, we couldn't set d to 0 as that would evaulate to false and output the default value of 5 instead.
 
 Q4: Explain the output of the following code and why
@@ -76,6 +79,7 @@ Output:
 `3`
 
 Explanation:
+
 The `foo` returns a function, storing the data passed to it as variable `a`.  When the resulting function is implemented, it runs the addition using the initial value (`a`) and the next value (`b`).  The `bar` function has become a function to add 1 to a number, so if we had `console.log(bar(4))`, the resulting output would be `5`.
 
 Q5: Explain how the following function would be used
